@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avianic ~ Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="imgs/logo2.png" class="image">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>This Is Avianic</h1>
+            <p>A free platform to generate interest in aerospace.</p>
+            <a href="services.html" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
+
+    <!-- What we Do -->
+    <section class="do" id="about">
+        <h1>What We Do</h1>
+        <p>A brief intro about Avianic</p>
+
+        <div class="row">
+            <div class="do-col">
+                <h3>We Seek</h3>
+                <p>to develop interest in students for aerospace and aeronautics in a simple and a fun manner.</p>
+            </div>
+            <div class="do-col">
+                <h3>We Explain</h3>
+                <p>the basic parts and functions of a airplane and introduce them to a new world of aeronautics.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h1>Our Services</h1>
+
+        <div class="row">
+            <div class="service-col">
+                <img src="imgs/basicconcept.jpeg" alt="">
+                <h3>Interative Pictures</h3>
+                <p>We expose children to learn more about aerospace with our new Interative Pictures feature</p>
+            </div>
+            <div class="service-col">
+                <img src="imgs/mainpage.jpeg" alt="">
+                    <h3>Fly the Plane</h3>
+                </a>
+                <p>We also provide the facility to fly the plane using your mouse (Not Compatible for Mobile Devices).
+                </p>
+            </div>
+            <div class="service-col">
+                <img src="imgs/breif2.jpeg" alt="">
+                <h3>Basic Concepts</h3>
+                <p>We also teach basic concepts to children such as how planes fly, reverse thrust and many more.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta" id="contact">
+        <h1>Enroll For Various Online Courses<br />Anywhere From The World.</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are Avianic and we are willing to share out ideas to people and develop a new interest for people.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <p>Developed and Designed by <a href="https://raikwal-homepage.vercel.app/" target="_blank">LakshyaRaikwal</a></p>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

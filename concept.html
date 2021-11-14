@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avianic ~ Basic Concepts</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="icon" href="imgs/favicon.ico">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html">
+        <img src="imgs/logo2.png" class="image">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="services.html">SERVICES</a>
+          </li>
+          <li>
+            <a href="blog.html">BLOG</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+    </nav>
+
+    <h1>Videos For Basic Concepts</h1>
+
+  </section>
+
+  <div class="container">
+
+    <div class="video-container">
+      <div class="video">
+        <video src="Videos/Airfoilcompressed.mp4" muted></video>
+        <div class="video__overlay">
+          <div class="video__title"><a href="https://drive.google.com/file/d/121ZyGuVhqqKkoYazf8YsZtrMBhX12F73/view?usp=sharing" class="thislink" target="_blank">Airfoil Technology</a></div>
+        </div>
+      </div>
+      <div class="video">
+        <video src="Videos/explainturbofancompressed.mp4" muted></video>
+        <div class="video__overlay">
+          <div class="video__title"><a href="https://drive.google.com/file/d/1Nt0ghTZgSHHLPbRCk7CYpSsHkdNdmj5N/view?usp=sharing" class="thislink" target="_blank">How Turbo Fans work?</a></div>
+        </div>
+      </div>
+      <div class="video">
+        <video src="Videos/flapsandtakeoffcompressed .mp4" muted></video>
+        <div class="video__overlay">
+          <div class="video__title"><a href="https://drive.google.com/file/d/1oO80LKEkjdxmlk4ImcyA4WQD8ym9RHOd/view?usp=sharing" class="thislink" target="_blank">Flaps Takeoff</a></div>
+        </div>
+      </div>
+      <div class="video">
+        <video src="Videos/flightnavigationcompressed.mp4" muted></video>
+        <div class="video__overlay">
+          <div class="video__title"><a href="https://drive.google.com/file/d/1NzHtfqIji8DIpG3SayVOT05i428FTPWy/view?usp=sharing" class="thislink" target="_blank">Flight Navigation</a></div>
+        </div>
+      </div>
+      <div class="video">
+        <video src="Videos/thrustcompressed.mp4" muted></video>
+        <div class="video__overlay">
+          <div class="video__title"><a href="https://drive.google.com/file/d/1cZ4yuUQYLywJVrwGGbbXSNZdwTVyrQWC/view?usp=sharing" class="thislink" target="_blank">Thrust and Turbo Fan</a></div>
+        </div>
+      </div>
+      <div class="video">
+        <video src="Videos/landingcompressed.mp4" muted></video>
+        <div class="video__overlay">
+          <div class="video__title"><a href="https://drive.google.com/file/d/16VOZPtdz709PnyPXzC5m52qlNc2D7wOB/view?usp=sharing" class="thislink" target="_blank">Landing Explained</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>We are Avianic and we are willing to share out ideas to people and develop a new interest for people.</p>
+
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Developed and Designed by <a href="https://raikwal-homepage.vercel.app/" target="_blank">LakshyaRaikwal</a></p>
+  </section>
+
+  <script>
+    var video = document.querySelectorAll('video')
+    video.forEach(play => play.addEventListener('click', () => {
+      play.classList.toggle('active');
+
+      if (play.paused) {
+        play.play();
+      } else {
+        play.pause();
+        play.currentTime = 0;
+      }
+    }));
+  </script>
+
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

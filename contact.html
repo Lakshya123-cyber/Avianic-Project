@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avianic ~ Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="imgs/logo2.png" class="image">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <!-- Contact Us -->
+
+    <section class="location">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.720623281385!2d103.73084935095522!3d1.3440402619621323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fe8a53c2ba5%3A0xa9964187dad210aa!2sParc%20Oasis!5e0!3m2!1sen!2ssg!4v1636897826063!5m2!1sen!2ssg"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Jurong East Ave 1, Parc Oasis</h5>
+                        <p>Jurong, Singapore</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+6569372428</h5>
+                        <p>Monday to Saturday, 9AM to 7PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>ragotmaragavendar@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="https://formspree.io/f/mpzkgjwq" method="POST">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="_replyto" placeholder="Enter your email" required>
+                    <textarea rows="8" name="message" placeholder="Type your message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are Avianic and we are willing to share out ideas to people and develop a new interest for people.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <p>Developed and Designed by <a href="https://raikwal-homepage.vercel.app/" target="_blank">LakshyaRaikwal</a></p>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
